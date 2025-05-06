@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Website</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <style>
+        .product-card {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+        }
+        .buy-btn {
+            width: 100%;
+        }
+        .header {
+            margin-bottom: 30px;
+        }
+        .user-menu {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #6c757d; /* Цвет фона как у bg-secondary */
+        }
+        .menu-content {
+            flex-grow: 1;
+        }
+        .user-section {
+            margin-top: auto;
+            padding-bottom: 20px;
+        }
+    </style>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <!-- Левая колонка - меню -->
+        <div class="col-3 sidebar p-0">
+            <div class="menu-content">
+                <div class="row text-center pt-3">
+                    <h2><b>Меню</b></h2>
+                </div>
+                <div class="row px-2">
+                    <div class="btn-group-vertical w-100" role="group" aria-label="Vertical button group">
+                        <button type="button" class="btn btn-primary text-start rounded-0">Главная</button>
+                        <button type="button" class="btn btn-secondary text-start rounded-0">Категории</button>
+                        <button type="button" class="btn btn-secondary text-start rounded-0">Заказы</button>
+                        <button type="button" class="btn btn-secondary text-start rounded-0">Контакты</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="user-section px-2">
+                <div class="btn-group dropup w-100" role="group">
+                    <button type="button" class="btn btn-primary dropdown-toggle w-100" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                        Пользователь
+                    </button>
+                    <ul class="dropdown-menu w-100">
+                        <li><a class="dropdown-item" href="https://github.com/antonsima">Профиль</a></li>
+                        <li><a class="dropdown-item" href="https://github.com/antonsima">Выход</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Правая колонка - контент -->
+        <div class="col-9">
+            <div class="row header text-center">
+                <h1 class="pt-1">Контакты</h1>
+            </div>
+            <div class="row">
+                <div class="col px-auto">
+                    <div class="card p-2">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Имя</label>
+                                <input class="form-control" type="text" placeholder="Default input" aria-label="default input example">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                       placeholder="name@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col px-auto">
+                    <div>
+                        <b>Наши контакты</b><br>
+                        Что-то там, где-то там
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
